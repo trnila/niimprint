@@ -274,7 +274,7 @@ class PrinterClient:
 
     def set_dimension(self, w, h):
         packet = self._transceive(
-            RequestCodeEnum.SET_DIMENSION, struct.pack(">HH", w, h)
+            RequestCodeEnum.SET_DIMENSION, struct.pack(">HHH", w, h, 1)
         )
         return bool(packet.data[0])
 
