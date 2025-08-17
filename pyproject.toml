@@ -10,6 +10,9 @@ dependencies = [
     "click>=8.1.7,<9",
 ]
 
+[project.scripts]
+niimprint = "niimprint.__main__:print_cmd"
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
